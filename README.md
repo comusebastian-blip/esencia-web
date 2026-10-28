@@ -1,4 +1,4 @@
-# ESENCIA by Gold Dubai — Arabian Collection
+# ESENCIA by Gold Dubai — Arabian Collection reservas 
 
 Sitio estático (HTML + CSS + JS, sin dependencias). Listo para Vercel.
 
