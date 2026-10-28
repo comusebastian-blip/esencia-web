@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Esencia by Gold Dubai</title>
+<meta name="description" content="ESENCIA by Gold Dubai · Arabian Collection. Perfumes árabes originales con asesoría personalizada en Ecuador.">
+<meta name="theme-color" content="#0a0806">
+<meta property="og:title" content="ESENCIA by Gold Dubai — Arabian Collection">
+<meta property="og:description" content="Tu presencia deja huella. Descubre la fragancia que cuenta tu historia.">
+<meta property="og:image" content="assets/portal.webp">
+<link rel="icon" href="assets/logo-sm.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=El+Messiri:wght@400;500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/portal.webp">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#protagonistas">Saltar al contenido</a>
+
+<!-- Telón de entrada -->
+<div class="intro" id="intro" aria-hidden="true"><div class="intro-line"></div></div>
+
+<header class="header" id="header">
+  <a class="header-mark" href="#inicio" aria-label="ESENCIA by Gold Dubai, inicio"><img src="assets/logo-sm.webp" alt="" width="306" height="284"></a>
+  <nav class="nav" id="nav" aria-label="Principal">
+    <a href="#protagonistas">Protagonistas</a>
+    <a href="#reservas" class="nav-hot">Reservas</a>
+    <a href="#aroma">Tu aroma</a>
+    <a href="#novedades">Prestige</a>
+    <a href="#coleccion">Colección</a>
+    <a href="#decants">Decants</a>
+    <a href="#experiencia">Experiencia</a>
+  </nav>
+  <a class="header-cta" href="https://wa.me/593990867201?text=Hola%2C%20quiero%20asesor%C3%ADa%20para%20elegir%20mi%20fragancia." target="_blank" rel="noopener">Asesoría</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+</header>
+
+<main id="inicio">
+
+  <!-- 1 · PORTADA -->
+  <section class="hero" id="hero">
+    <div class="hero-media" aria-hidden="true">
+      <picture><source media="(min-width: 901px) and (min-aspect-ratio: 1/1)" srcset="assets/portal.webp 1200w, assets/portal-2x.webp 1882w" sizes="57vh"><source srcset="assets/portal-sm.webp 600w, assets/portal.webp 1200w, assets/portal-2x.webp 1882w" sizes="100vw"><img class="hero-img" src="assets/portal.webp" alt="" width="941" height="1672" fetchpriority="high"></picture>
+    </div>
+    <canvas class="hero-dust" id="dust" aria-hidden="true"></canvas>
+    <div class="hero-veil" aria-hidden="true"></div>
+    <div class="hero-content">
+      <img class="hero-logo" src="assets/logo.webp" alt="ESENCIA by Gold Dubai" width="918" height="852">
+      <p class="hero-kicker"><span>Arabian Collection</span></p>
+      <h1 class="hero-title" aria-label="Tu presencia deja huella">
+        <span class="line"><span>Tu presencia</span></span>
+        <span class="line"><em>deja huella</em></span>
+      </h1>
+      <p class="hero-sub">Descubre la fragancia que cuenta tu historia.</p>
+      <div class="hero-actions">
+        <a class="btn-gold" href="#protagonistas"><span>Descubrir mi fragancia</span><i aria-hidden="true">→</i></a>
+        <a class="btn-quiet" href="#aroma">¿Qué aroma me define?</a>
+      </div>
+    </div>
+    <a class="hero-scroll" href="#protagonistas" aria-label="Ir a las fragancias"><span></span></a>
+  </section>
+
+  <!-- 2 · PROTAGONISTAS — tocadiscos 3D de mármol -->
+  <section class="lead" id="protagonistas" aria-labelledby="lead-h">
+    <div class="sec-head center">
+      <p class="eyebrow">La firma de la casa</p>
+      <h2 id="lead-h">Fragancias <em>protagonistas</em></h2>
+    </div>
+    <div class="spin" id="spin" aria-roledescription="carrusel" aria-label="Fragancias protagonistas">
+      <div class="spin-glow" aria-hidden="true"></div>
+      <div class="spin-scene" id="spinScene">
+        <div class="spin-tilt"><div class="spin-ring" id="spinRing"></div></div>
+      </div>
+      <div class="spin-beam" aria-hidden="true"></div>
+      <button class="t-nav t-prev" id="leadPrev" aria-label="Fragancia anterior">‹</button>
+      <button class="t-nav t-next" id="leadNext" aria-label="Fragancia siguiente">›</button>
+      <p class="spin-hint" aria-hidden="true"><span>⟵</span> Desliza para girar <span>⟶</span></p>
+    </div>
+    <div class="unfold open" id="unfold" aria-live="polite">
+      <i class="uf-line" aria-hidden="true"></i>
+      <div class="uf-col uf-id">
+        <p class="uf-count"><span id="leadNum">01</span> / <span id="leadTotal">05</span></p>
+        <p class="lead-brand" id="leadBrand"></p>
+        <h3 class="lead-name" id="leadName"></h3>
+        <p class="uf-conc" id="leadConc"></p>
+      </div>
+      <div class="uf-col uf-desc">
+        <p class="lead-hook" id="leadHook"></p>
+        <p class="lead-desc" id="leadDesc"></p>
+        <div class="gain" id="leadGain"></div>
+        <p class="lead-profile" id="leadProfile"></p>
+      </div>
+      <div class="uf-col uf-notes"><div class="pyramid" id="leadNotes"></div></div>
+      <div class="uf-col uf-cta">
+        <p class="uf-price"><span>Precio</span><b id="leadPrice"></b></p>
+        <a class="btn-gold" id="leadBuy" target="_blank" rel="noopener"><span>Quiero esta fragancia</span><i aria-hidden="true">→</i></a>
+        <button class="btn-text" id="leadMore">Ficha completa</button>
+      </div>
+    </div>
+    <div class="lead-dots" id="leadDots" role="tablist" aria-label="Elegir fragancia"></div>
+  </section>
+
+  <!-- RESERVAS · PREVENTA CON ABONO -->
+  <section class="reserve" id="reservas" aria-labelledby="res-h">
+    <div class="sec-head center">
+      <p class="eyebrow">Preventa exclusiva</p>
+      <h2 id="res-h">Colección Árabe <em>· Reservas abiertas</em></h2>
+      <p class="sec-lede">Reserva tu perfume árabe original favorito con un abono anticipado.</p>
+    </div>
+
+    <div class="res-box rv">
+      <ol class="res-steps" aria-label="Pasos de la reserva">
+        <li class="on" data-step-dot="1"><i>1</i><span>Elige</span></li>
+        <li data-step-dot="2"><i>2</i><span>Abona</span></li>
+        <li data-step-dot="3"><i>3</i><span>Confirma</span></li>
+      </ol>
+
+      <form id="resForm" novalidate>
+        <!-- Paso 1 -->
+        <div class="res-step on" data-step="1">
+          <p class="res-label">Elige tu perfume</p>
+          <div class="res-pick" id="resPick" role="radiogroup" aria-label="Perfume a reservar"></div>
+          <div class="res-opts">
+            <div class="res-opt"><span class="res-label">Cantidad</span>
+              <div class="res-qty"><button type="button" data-q="-1" aria-label="Menos">−</button><output id="resQty">1</output><button type="button" data-q="1" aria-label="Más">+</button></div>
+            </div>
+            <div class="res-opt"><span class="res-label">Abono por perfume</span>
+              <div class="res-abonos" id="resAbonos" role="radiogroup" aria-label="Abono por perfume"></div>
+            </div>
+          </div>
+          <button type="button" class="btn-gold wide res-next" data-go="2"><span>Reservar ahora</span><i aria-hidden="true">→</i></button>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="res-step" data-step="2" hidden>
+          <p class="res-eta">Entrega estimada: <b data-entrega>10 a 15 días</b></p>
+          <ul class="res-terms">
+            <li>Tu abono separa el perfume y se descuenta del total.</li>
+            <li>El saldo se paga antes de la entrega o del envío.</li>
+            <li>Confirmamos tu reserva por WhatsApp al verificar el pago.</li>
+            <li>Si el perfume no llega, te devolvemos el 100&nbsp;% de tu abono.</li>
+          </ul>
+          <div class="res-bank" id="resBank"></div>
+          <label class="res-file"><input type="file" id="resFile" accept="image/*,application/pdf"><span id="resFileTxt">Subir comprobante de transferencia</span><img id="resPreview" alt="" hidden></label>
+          <label class="res-check"><input type="checkbox" id="resAccept"> Acepto las condiciones de la reserva</label>
+          <div class="res-nav"><button type="button" class="res-back" data-go="1">← Atrás</button><button type="button" class="btn-gold res-next" data-go="3"><span>Continuar</span><i aria-hidden="true">→</i></button></div>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="res-step" data-step="3" hidden>
+          <div class="res-fields">
+            <label>Nombre completo<input type="text" id="resName" autocomplete="name" placeholder="Tu nombre"></label>
+            <label>WhatsApp<input type="tel" id="resPhone" autocomplete="tel" inputmode="tel" placeholder="099 000 0000"></label>
+          </div>
+          <p class="res-fine">Se abrirá WhatsApp con tu reserva lista. Adjunta ahí la foto de tu comprobante.</p>
+          <div class="res-nav"><button type="button" class="res-back" data-go="2">← Atrás</button><button type="submit" class="btn-gold res-next"><span>Enviar por WhatsApp</span><i aria-hidden="true">→</i></button></div>
+        </div>
+
+        <p class="res-error" id="resError" role="alert" hidden></p>
+      </form>
+
+      <div class="res-done" id="resDone" hidden>
+        <p class="lead-brand">Reserva enviada</p>
+        <h3>Gracias, <span id="resDoneName"></span>.</h3>
+        <p>Tu código es <b id="resCode"></b>. Verificamos tu transferencia y te confirmamos por WhatsApp.</p>
+        <p class="res-attach" id="resAttachHint" hidden>Adjunta la foto de tu comprobante en el chat que se abrió.</p>
+        <button type="button" class="btn-quiet" id="resShare" hidden>Enviar comprobante</button>
+        <button type="button" class="res-back" id="resAgain">Hacer otra reserva</button>
+      </div>
+
+      <div class="res-sum" id="resSum" aria-live="polite"></div>
+    </div>
+  </section>
+
+
+  <!-- ASESORÍA: perfil olfativo -->
+  <section class="advisor" id="aroma" aria-labelledby="adv-h">
+    <div class="advisor-inner">
+      <div class="sec-head center">
+        <p class="eyebrow">¿Qué aroma te define?</p>
+        <h2 id="adv-h">Tu personalidad <em>tiene un aroma.</em></h2>
+        <p class="sec-lede">Descubre la fragancia que mejor expresa quién eres. Puedes elegir más de un perfil.</p>
+        <p class="adv-stock"><span>Más allá de la web</span>Tenemos más fragancias en stock y creaciones de la casa que no aparecen aquí. Elige tu perfil y en la asesoría te mostramos todas las opciones para ti.</p>
+      </div>
+      <div class="adv-options" id="advFamily" role="group" aria-label="Perfil olfativo"></div>
+      <div class="adv-result" id="advResult" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- PELÍCULA -->
+  <section class="film" aria-label="Video de la colección">
+    <div class="film-frame">
+      <video id="film" muted loop playsinline preload="none" poster="assets/video-poster.jpg" aria-label="Video de la colección ESENCIA">
+        <source src="assets/esencia-collection.mp4" type="video/mp4">
+      </video>
+      <button class="film-sound" id="filmSound" aria-label="Activar sonido">Sonido</button>
+    </div>
+    <p class="film-cap">Dubái en cada detalle · Tu esencia, sin fronteras</p>
+  </section>
+
+  <!-- 3 · NOVEDADES PRESTIGE -->
+  <section class="rail rail-prestige" id="novedades" aria-labelledby="pre-h">
+    <div class="sec-head row">
+      <div>
+        <p class="eyebrow">Recién llegados</p>
+        <h2 id="pre-h">Novedades <em>Prestige</em></h2>
+        <p class="sec-lede">Arabiyat Prestige y creaciones elegidas para descubrir algo extraordinario.</p>
+      </div>
+      <div class="arrows"><button data-rail="prestigeRail" data-dir="-1" aria-label="Anterior">‹</button><button data-rail="prestigeRail" data-dir="1" aria-label="Siguiente">›</button></div>
+    </div>
+    <div class="rail-track" id="prestigeRail"></div>
+    <div class="rail-dots" data-dots="prestigeRail"></div>
+  </section>
+
+  <!-- Lo que una fragancia hace por ti -->
+  <section class="whyline" aria-label="Lo que una fragancia hace por ti">
+    <p class="whyline-k">Lo que una fragancia hace por ti</p>
+    <ul>
+      <li>Confianza al entrar a cualquier lugar</li>
+      <li>Una presencia que se recuerda</li>
+      <li>El detalle que completa tu imagen</li>
+      <li>Un regalo que habla por ti</li>
+    </ul>
+  </section>
+
+  <!-- 6 · CATÁLOGO -->
+  <section class="catalog" id="coleccion" aria-labelledby="cat-h">
+    <div class="sec-head row">
+      <div>
+        <p class="eyebrow">La colección completa</p>
+        <h2 id="cat-h">Encuentra tu <em>firma olfativa</em></h2>
+        <p class="sec-lede">Fragancias originales de USD 60 a USD 90. Te confirmo el precio exacto por WhatsApp. <a class="lede-link" href="https://wa.me/593990867201?text=Hola%20equipo%20Esencia%2C%20busco%20una%20fragancia%20que%20no%20est%C3%A1%20en%20la%20web.%20%C2%BFQu%C3%A9%20otras%20opciones%20tienen%20en%20stock%3F" target="_blank" rel="noopener">¿No ves la tuya? Tenemos más en stock →</a></p>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filtrar por familia"></div>
+    </div>
+    <div class="cat-grid" id="catGrid"></div>
+  </section>
+
+  <!-- DECANTS -->
+  <section class="decant" id="decants" aria-labelledby="dec-h">
+    <div class="decant-inner">
+      <div class="decant-visual" aria-hidden="true">
+        <img class="decant-img" src="assets/decants.webp" width="1400" height="1750" loading="lazy" alt="Decants de 5 ml ESENCIA">
+      </div>
+      <div class="decant-copy">
+        <p class="eyebrow">Quiero mi decant</p>
+        <h2 id="dec-h">Pruébala antes de <em>enamorarte.</em></h2>
+        <p class="decant-price"><strong>5 ml</strong><span>·</span><strong>USD 6</strong></p>
+        <ul class="decant-why">
+          <li><b>Pruébala en tu piel.</b> Conoce cómo evoluciona en ti antes de comprar el frasco completo.</li>
+          <li><b>Comprueba su duración.</b> Vívela varios días: en el trabajo, en una cena, en una salida.</li>
+          <li><b>Llévala contigo.</b> 5 ml caben en el bolso, el auto o la maleta de viaje.</li>
+          <li><b>Descubre varias.</b> Conoce tres o cuatro fragancias por menos de lo que cuesta un frasco.</li>
+        </ul>
+        <p class="decant-k">Elige tus fragancias</p>
+        <div class="decant-chips" id="decantChips" role="group" aria-label="Fragancias para decant"></div>
+        <div class="decant-total">
+          <p id="decantSum">Elige una o varias fragancias</p>
+          <a class="btn-gold" id="decantSend" target="_blank" rel="noopener"><span>Pedir mis decants</span><i aria-hidden="true">→</i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · EXPERIENCIA -->
+  <section class="experience" id="experiencia" aria-labelledby="exp-h">
+    <div class="exp-card">
+      <p class="eyebrow">Esencia Private Experience</p>
+      <h2 id="exp-h">Hay aromas que necesitas <em>sentir.</em></h2>
+      <p class="exp-text">Vive una experiencia sensorial personalizada. Explora distintas familias olfativas, descubre tu estilo y encuentra la fragancia que conecta contigo.</p>
+      <div class="exp-price">
+        <strong><sup>USD</sup>3</strong>
+        <span>Preabono de reserva<br><b>No reembolsable</b></span>
+      </div>
+      <p class="exp-fine">El preabono confirma tu asistencia y reserva tu espacio de atención personalizada. Coordinación previa por WhatsApp.</p>
+      <a class="btn-gold" href="https://wa.me/593990867201?text=Hola%2C%20quiero%20agendar%20mi%20experiencia%20olfativa%20con%20preabono%20no%20reembolsable%20de%20USD%203." target="_blank" rel="noopener"><span>Agendar mi experiencia</span><i aria-hidden="true">→</i></a>
+    </div>
+  </section>
+
+  <!-- 8 · PREGUNTAS FRECUENTES -->
+  <section class="faq" id="preguntas" aria-labelledby="faq-h">
+    <div class="sec-head center">
+      <p class="eyebrow">Compra con confianza</p>
+      <h2 id="faq-h">Lo que más nos <em>preguntan.</em></h2>
+    </div>
+    <div class="faq-list">
+      <details open>
+        <summary>¿Tienen más fragancias que no están en la web?</summary>
+        <p>Sí. Además de esta colección tenemos más fragancias en stock y creaciones de la casa. Cuéntanos qué te gusta y en la asesoría te mostramos las opciones, explicándote con claridad qué es cada una.</p>
+      </details>
+      <details>
+        <summary>¿Tienen local o entregan a domicilio?</summary>
+        <p>Puedes retirar tu perfume en nuestra oficina en Cuenca o coordinamos la entrega en el punto que te quede mejor. Te confirmamos todo por WhatsApp.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto cuesta un perfume?</summary>
+        <p>Las fragancias de esta colección van de USD&nbsp;60 a USD&nbsp;90. Cada fragancia muestra su precio en la ficha, y algunas casas tienen precio «desde».</p>
+      </details>
+      <details>
+        <summary>¿Puedo probarlo antes de comprar el frasco?</summary>
+        <p>Sí. Pide un decant de 5&nbsp;ml por USD&nbsp;6 y llévalo contigo unos días antes de decidir. También puedes agendar tu experiencia olfativa.</p>
+      </details>
+      <details>
+        <summary>¿Cómo hago mi pedido?</summary>
+        <p>Toca «Ver y comprar» en la fragancia que te guste o escríbenos directo. Te respondemos por WhatsApp, confirmamos disponibilidad y coordinamos el pago y la entrega.</p>
+      </details>
+    </div>
+    <a class="btn-gold faq-cta" href="https://wa.me/593990867201?text=Hola%20equipo%20Esencia%2C%20tengo%20una%20pregunta%20sobre%20sus%20perfumes." target="_blank" rel="noopener"><span>Tengo otra pregunta</span><i aria-hidden="true">→</i></a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <img src="assets/logo-sm.webp" alt="ESENCIA by Gold Dubai" width="306" height="284">
+  <p>Arabian Collection · Dubái en cada detalle</p>
+  <nav class="social" aria-label="Redes sociales">
+    <a href="https://www.instagram.com/esenciabydubai/" target="_blank" rel="noopener" aria-label="Instagram @esenciabydubai"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".9" class="dot"/></svg></a>
+    <a href="https://www.tiktok.com/@esenciabydubai" target="_blank" rel="noopener" aria-label="TikTok @esenciabydubai"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.6 2.2 4.4 5 4.6"/></svg></a>
+    <a href="https://wa.me/593990867201" target="_blank" rel="noopener" aria-label="WhatsApp 099 086 7201"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 0 1-2-2l.8-1-1-2L9 9.5z" class="fill"/></svg></a>
+  </nav>
+  <span class="handle">@esenciabydubai</span>
+  <a class="foot-wa" href="https://wa.me/593990867201" target="_blank" rel="noopener">WhatsApp · 099 086 7201</a>
+  <small>© <span id="year">2026</span> ESENCIA by Gold Dubai · Ecuador</small>
+</footer>
+
+<!-- Ficha olfativa -->
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetName" hidden>
+  <div class="sheet-scrim" data-close></div>
+  <article class="sheet-panel">
+    <button class="sheet-close" data-close aria-label="Cerrar ficha">×</button>
+    <div class="sheet-stage"><div class="shot shot-md" id="sheetShot"></div></div>
+    <div class="sheet-body">
+      <p class="lead-brand" id="sheetBrand"></p>
+      <h2 class="sheet-name" id="sheetName"></h2>
+      <p class="sheet-desc" id="sheetDesc"></p>
+      <div class="gain" id="sheetGain"></div>
+      <p class="lead-profile" id="sheetProfile"></p>
+      <div class="pyramid" id="sheetNotes"></div>
+      <p class="uf-price sheet-price"><span>Precio</span><b id="sheetPrice"></b></p>
+      <a class="btn-gold wide" id="sheetBuy" target="_blank" rel="noopener"><span>Quiero esta fragancia</span><i aria-hidden="true">→</i></a>
+      <a class="btn-quiet sheet-decant" id="sheetDecant" target="_blank" rel="noopener">Pedir decant 5 ml · USD 6</a>
+      <a class="btn-text" id="sheetTry" target="_blank" rel="noopener">Probarla en mi experiencia olfativa (USD 3)</a>
+    </div>
+  </article>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
